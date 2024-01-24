@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="head container">
+        <h1 class="logo">Yoga<span>Pras.</span></h1>
+        <div class="msg">
+          <ul>
+            <li>
+              Welcome To <br />
+              my web portfolio
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Thank you <br />
+              for visiting my website
+            </li>
+          </ul>
+          <ul>
+            <li>2023</li>
+          </ul>
+        </div>
+        <a href="#contact" class="btn-group">
+          <button>Contact me</button>
+        </a>
+      </div>
+      <div class="body container">
+        <h1>What are you looking for?</h1>
+        <p>Fullstack Devloper<span>*</span></p>
+        <p>Click the "Get started" button to scroll down</p>
+        <a href="#welcome" class="btn-group">
+          <button>Get started</button>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="18"
+              viewBox="0 0 16 18"
+              fill="none"
+            >
+              <path
+                d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </a>
+      </div>
+      <nav id="navigation" class="container">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <article id="welcome">
+        <div class="">
+          <h1>THANK YOU FOR VISITING MY <span>WEBSITE</span></h1>
+          <p id="tanggal"></p>
+        </div>
+      </article>
+      <div class="">
+        <article id="home">
+          <h1>Page Home.</h1>
+        </article>
+        <article id="about">
+          <h1>Page About.</h1>
+        </article>
+        <article id="project">
+          <section>
+            <img
+              src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?q=80&w=1553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <h1>2k23 Project That I Made</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Turpis at orci velit
+              bibendum mauris sed a quis. Amet morbi nam tristique aliquam.
+              Lacus libero id ut turpis malesuada pretium eget. Mus nunc ipsum
+              morbi massa.
+            </p>
+            <p>22. 02. 2023.</p>
+          </section>
+          <section>
+            <img
+              src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?q=80&w=1553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <h1>2k23 Project That I Made</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Turpis at orci velit
+              bibendum mauris sed a quis. Amet morbi nam tristique aliquam.
+              Lacus libero id ut turpis malesuada pretium eget. Mus nunc ipsum
+              morbi massa.
+            </p>
+            <p>22. 02. 2023.</p>
+          </section>
+        </article>
+        <article id="skills">
+          <h1>Page Skills.</h1>
+        </article>
+        <article id="contact">
+          <h1>Page Contact.</h1>
+        </article>
+        <div style="display: inline; position: relative">
+          <button
+            onclick="document.documentElement.scrollTop = 0;"
+            style="
+              display: inline;
+              justify-items: end;
+              cursor: pointer;
+              border: none;
+              background: transparent;
+              position: -webkit-sticky;
+              position: sticky;
+              bottom: 0;
+              padding-bottom: 1rem;
+              float: right;
+            "
+          >
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="49"
+                height="49"
+                rx="24.5"
+                fill="#D9D9D9"
+                stroke="black"
+              />
+              <path
+                d="M25 16L17 23.5L18.128 24.5575L24.2 18.8725V34H25.8V18.8725L31.872 24.5575L33 23.5L25 16Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="assets/js/script.min.js"></script> -->
+
+    <script>
+      var tanggalSekarang = new Date();
+
+      // Mendapatkan tanggal, bulan, dan tahun
+      var tanggal = tanggalSekarang.getDate();
+      var bulan = tanggalSekarang.getMonth() + 1; // Perlu ditambah 1 karena bulan dimulai dari 0
+      var tahun = tanggalSekarang.getFullYear();
+
+      // Format tanggal dengan "." sebagai pemisah
+      var tanggalFormatted = tanggal + ". " + bulan + ". " + tahun + ".";
+
+      document.getElementById("tanggal").innerText = tanggalFormatted;
+    </script>
+  </body>
+</html>

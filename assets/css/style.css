@@ -1,0 +1,336 @@
+/* Import font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* Reset and normalize styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #d9d9d9;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+/* ButtonGroup styles */
+.btn-group {
+  display: flex;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header styles */
+
+header {
+  display: inline;
+}
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .head .logo {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+header .head .logo span {
+  font-weight: 700;
+}
+
+header .head .msg {
+  display: none;
+}
+
+header .head .btn-group button {
+  border: 1px solid #000;
+  border-radius: 100px;
+  background: transparent;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+/* Button styles in the header */
+header .head button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+header .head .btn-group button:hover {
+  color: #fff;
+  background: #000;
+  transition: all ease-in-out 0.3s;
+}
+
+header .body {
+  margin-top: 5rem;
+  display: block;
+}
+
+header .body h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 113.156%;
+}
+
+header .body p:nth-child(2) {
+  color: #717171;
+  margin-top: 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+header .body p span {
+  color: #b00000;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+header .body p:nth-child(3) {
+  margin-top: 3.5rem;
+  color: #5c5c5c;
+  font-size: 0.48rem;
+}
+
+header .body .btn-group button {
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+header .body .btn-group button:nth-child(1) {
+  padding: 0 0.8rem;
+  border: 1px solid #000;
+  background: transparent;
+
+  font-family: Inter;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+header .body .btn-group button:nth-child(2) {
+  padding: 0.6rem 0.8rem;
+  background: #bfbfbf;
+  border: 1px solid #000;
+  border-left: none;
+}
+
+header nav {
+  top: 0;
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 12.5rem !important;
+  padding-top: 20px;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.3rem;
+
+  border-radius: 0.3rem;
+  border: 1px solid #747474;
+  /* background: rgba(116, 116, 116, 0.12); */
+  background: rgba(138, 138, 138, 0.274);
+  backdrop-filter: blur(9px);
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: rgba(165, 0, 0, 0.12); */
+  width: 50px;
+}
+
+header nav ul li a {
+  color: #000;
+  font-family: Inter;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li a:hover {
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+article {
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+#welcome {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#welcome h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+#welcome h1 span {
+  font-weight: 700;
+}
+
+#welcome p {
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+  font-size: 0.7;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+#project section {
+  margin: 2rem 0;
+}
+
+#project img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+#project h1 {
+  width: 85%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.9rem;
+  font-family: Helvetica;
+  font-size: 1.3rem;
+  font-weight: 400;
+  /* border-bottom: 1px solid black; */
+  text-decoration: underline;
+}
+#project p {
+  width: 85%;
+  color: #747474;
+  font-family: Helvetica;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#project section p:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  header nav ul {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  header .body h1 {
+    font-size: 5rem;
+  }
+
+  header nav ul {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 924px;
+  }
+
+  header .head .msg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+
+  header .body h1 {
+    font-size: 5.5rem;
+    max-width: 70%;
+    font-weight: 400;
+  }
+
+  header .body p:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  header .body p span {
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    width: 50%;
+    padding: 1.25rem 3.125rem;
+  }
+
+  header nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1220px;
+  }
+
+  header .body h1 {
+    font-size: 5.5rem;
+    max-width: 50%;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
