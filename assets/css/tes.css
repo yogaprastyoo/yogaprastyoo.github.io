@@ -1,10 +1,7 @@
-/* Import font from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
-/* Reset and normalize styles */
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,8 +12,6 @@
   text-decoration: none;
   list-style: none;
 }
-
-/* Body styles */
 body {
   margin: 0;
   padding: 0;
@@ -25,159 +20,126 @@ body {
   color: #000;
   background-color: #d9d9d9;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* Container styles */
 .container {
   width: 90%;
   margin: 1.5rem auto;
 }
-
-/* ButtonGroup styles */
 .btn-group {
   display: flex;
   width: fit-content;
 }
-
-.flex {
-  display: flex;
-}
-
-/* Header styles */
-
 header {
   display: inline;
 }
-
 header .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header .head .logo {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
-
 header .head .logo span {
   font-weight: 700;
 }
-
 header .head .msg {
   display: none;
 }
-
 header .head .btn-group button {
   border: 1px solid #000;
   border-radius: 100px;
-  background: transparent;
-  font-size: 0.6rem;
+  background: 0 0;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
-
-/* Button styles in the header */
-header .head button {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+header .head button:nth-child(1) {
+  padding: 0.5rem 1.62rem 0.5rem 1rem;
 }
-
+header .head button:nth-child(2) {
+  padding: 0.5rem 1rem 0.5rem 1.62rem;
+  margin-left: -0.95rem;
+}
 header .head .btn-group button:hover {
   color: #fff;
   background: #000;
   transition: all ease-in-out 0.3s;
 }
-
 header .body {
   margin-top: 5rem;
   display: block;
 }
-
 header .body h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 113.156%;
 }
-
-header .body p:nth-child(2) {
-  color: #717171;
-  margin-top: 1.3rem;
-  font-size: 0.8rem;
+header .body p:nth-child(1) {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 header .body p span {
   color: #b00000;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
-
 header .body p:nth-child(3) {
   margin-top: 3.5rem;
   color: #5c5c5c;
   font-size: 0.48rem;
 }
-
 header .body .btn-group button {
   margin-top: 0.8rem;
   cursor: pointer;
 }
 header .body .btn-group button:nth-child(1) {
-  padding: 0 0.8rem;
+  padding: 0.875rem 1.25rem;
   border: 1px solid #000;
-  background: transparent;
-
+  background: 0 0;
   font-family: Inter;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 header .body .btn-group button:nth-child(2) {
-  padding: 0.6rem 0.8rem;
+  padding: 0.9375rem 1rem;
   background: #bfbfbf;
   border: 1px solid #000;
   border-left: none;
 }
-
 header nav {
   top: 0;
   display: flex;
   position: sticky;
   justify-content: center;
   justify-items: center;
-  margin-top: 12.5rem !important;
+  margin-top: 3rem !important;
   padding-top: 20px;
 }
-
 header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.3rem;
-
-  border-radius: 0.3rem;
+  border-radius: 3.4375rem;
   border: 1px solid #747474;
-  /* background: rgba(116, 116, 116, 0.12); */
-  background: rgba(138, 138, 138, 0.274);
+  background: rgba(116, 116, 116, 0.12);
   backdrop-filter: blur(9px);
 }
-
 header nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
-  /* background: rgba(165, 0, 0, 0.12); */
   width: 50px;
 }
-
 header nav ul li a {
   color: #000;
   font-family: Inter;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -188,9 +150,17 @@ header nav ul li a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-article {
-  min-height: 100vh;
-  padding-top: 5rem;
+main article {
+  /* padding-top: 6rem; */
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+main article h1 {
+  font-size: 4.5rem;
 }
 
 #welcome {
@@ -216,46 +186,6 @@ article {
   text-decoration-line: underline;
 }
 
-#project section {
-  margin: 2rem 0;
-}
-
-#project img {
-  width: 100%;
-  border-radius: 0.5rem;
-}
-
-#project h1 {
-  width: 85%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.9rem;
-  font-family: Helvetica;
-  font-size: 1.3rem;
-  font-weight: 400;
-  /* border-bottom: 1px solid black; */
-  text-decoration: underline;
-}
-#project p {
-  width: 85%;
-  color: #747474;
-  font-family: Helvetica;
-  margin-bottom: 0.8rem;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-#project section p:last-child {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-bottom: 0.5rem;
-  text-decoration: underline;
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -264,21 +194,17 @@ article {
     width: 80%;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-
   header .body h1 {
     font-size: 5rem;
   }
-
   header nav ul {
     width: 70%;
   }
 }
-
 @media (min-width: 1024px) {
   .container {
     max-width: 924px;
@@ -296,7 +222,6 @@ article {
   header .body h1 {
     font-size: 5.5rem;
     max-width: 70%;
-    font-weight: 400;
   }
 
   header .body p:nth-child(2) {
@@ -305,6 +230,9 @@ article {
 
   header .body p span {
     font-size: 2rem;
+  }
+  header nav {
+    margin-top: 8rem !important;
   }
 
   header nav ul {
@@ -315,22 +243,45 @@ article {
   header nav ul li a {
     font-size: 1rem;
   }
-}
 
+  #cursor-ring {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 80px;
+    height: 80px;
+    mix-blend-mode: difference;
+    background-color: #fafafa;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: scale 100ms;
+  }
+
+  #cursor-ring.active {
+    scale: 0.75;
+  }
+}
 @media (min-width: 1280px) {
   .container {
     max-width: 1220px;
   }
-
   header .body h1 {
     font-size: 5.5rem;
     max-width: 50%;
     font-weight: 400;
   }
 }
-
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+  }
+  header .body h1 {
+    margin-top: 12rem;
+    font-size: 7rem;
+  }
+
+  header nav {
+    margin-top: 15rem !important;
   }
 }

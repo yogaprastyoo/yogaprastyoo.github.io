@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YogaPras.</title>
+    <link rel="stylesheet" href="assets/css/tes.css" />
   </head>
   <body>
     <header class="container">
@@ -12,31 +12,25 @@
         <h1 class="logo">Yoga<span>Pras.</span></h1>
         <div class="msg">
           <ul>
-            <li>
-              Welcome To <br />
-              my web portfolio
-            </li>
+            <li>Welcome To<br />my web portfolio</li>
           </ul>
           <ul>
-            <li>
-              Thank you <br />
-              for visiting my website
-            </li>
+            <li>Thank you<br />for visiting my website</li>
           </ul>
           <ul>
-            <li>2023</li>
+            <li id="tahun">2023</li>
           </ul>
         </div>
-        <a href="#contact" class="btn-group">
-          <button>Contact me</button>
-        </a>
+        <a href="#contact" class="btn-group"
+          ><button>Contact</button> <button>Me</button></a
+        >
       </div>
       <div class="body container">
         <h1>What are you looking for?</h1>
-        <p>Fullstack Devloper<span>*</span></p>
+        <p>Fullstack Devloper<span>.</span></p>
         <p>Click the "Get started" button to scroll down</p>
-        <a href="#welcome" class="btn-group">
-          <button>Get started</button>
+        <a href="#welcome" class="btn-group"
+          ><button>Get started</button>
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,27 +43,16 @@
                 d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
                 fill="black"
               />
-            </svg>
-          </button>
-        </a>
+            </svg></button
+        ></a>
       </div>
       <nav id="navigation" class="container">
         <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#project">Project</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -80,49 +63,14 @@
           <p id="tanggal"></p>
         </div>
       </article>
-      <div class="">
-        <article id="home">
-          <h1>Page Home.</h1>
-        </article>
-        <article id="about">
-          <h1>Page About.</h1>
-        </article>
+      <div>
+        <article id="home"><h1>Page Home.</h1></article>
+        <article id="about"><h1>Page About.</h1></article>
         <article id="project">
-          <section>
-            <img
-              src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?q=80&w=1553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-            <h1>2k23 Project That I Made</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Turpis at orci velit
-              bibendum mauris sed a quis. Amet morbi nam tristique aliquam.
-              Lacus libero id ut turpis malesuada pretium eget. Mus nunc ipsum
-              morbi massa.
-            </p>
-            <p>22. 02. 2023.</p>
-          </section>
-          <section>
-            <img
-              src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?q=80&w=1553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-            <h1>2k23 Project That I Made</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Turpis at orci velit
-              bibendum mauris sed a quis. Amet morbi nam tristique aliquam.
-              Lacus libero id ut turpis malesuada pretium eget. Mus nunc ipsum
-              morbi massa.
-            </p>
-            <p>22. 02. 2023.</p>
-          </section>
+          <h1>Page Project.</h1>
         </article>
-        <article id="skills">
-          <h1>Page Skills.</h1>
-        </article>
-        <article id="contact">
-          <h1>Page Contact.</h1>
-        </article>
+        <article id="skills"><h1>Page Skills.</h1></article>
+        <article id="contact"><h1>Page Contact.</h1></article>
         <div style="display: inline; position: relative">
           <button
             onclick="document.documentElement.scrollTop = 0;"
@@ -131,7 +79,7 @@
               justify-items: end;
               cursor: pointer;
               border: none;
-              background: transparent;
+              background: 0 0;
               position: -webkit-sticky;
               position: sticky;
               bottom: 0;
@@ -164,20 +112,7 @@
         </div>
       </div>
     </main>
-    <!-- <script src="assets/js/script.min.js"></script> -->
-
-    <script>
-      var tanggalSekarang = new Date();
-
-      // Mendapatkan tanggal, bulan, dan tahun
-      var tanggal = tanggalSekarang.getDate();
-      var bulan = tanggalSekarang.getMonth() + 1; // Perlu ditambah 1 karena bulan dimulai dari 0
-      var tahun = tanggalSekarang.getFullYear();
-
-      // Format tanggal dengan "." sebagai pemisah
-      var tanggalFormatted = tanggal + ". " + bulan + ". " + tahun + ".";
-
-      document.getElementById("tanggal").innerText = tanggalFormatted;
-    </script>
+    <div id="cursor-ring"></div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
