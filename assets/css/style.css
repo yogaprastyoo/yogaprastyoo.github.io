@@ -25,6 +25,34 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+#scroll-top {
+  display: inline;
+  position: relative;
+}
+
+#scroll-top button {
+  display: inline;
+  justify-items: end;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 1rem;
+  float: right;
+}
+
+#scroll-top button svg {
+  width: 55px;
+  height: 55px;
+  transition: scale 200ms;
+}
+#scroll-top button:hover svg {
+  scale: 0.95;
+}
+
 .container {
   width: 90%;
   margin: 1.5rem auto;
@@ -280,7 +308,6 @@ main article h1 {
     margin-top: 12rem;
     font-size: 7rem;
   }
-
   header nav {
     margin-top: 15rem !important;
   }
