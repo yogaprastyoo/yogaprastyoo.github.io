@@ -36,9 +36,10 @@ document.addEventListener("keydown", (event) => {
 
 // Display current date
 const currentDate = new Date();
-const day = currentDate.getDate();
-const month = currentDate.getMonth() + 1;
+const day = String(currentDate.getDate()).padStart(2, "0");
+const month = String(currentDate.getMonth() + 1).padStart(2, "0");
 const year = currentDate.getFullYear();
+
 const formattedDate = `${day}. ${month}. ${year}.`;
 
 document.getElementById("tahun").innerText = year;
