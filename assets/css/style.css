@@ -23,6 +23,8 @@ body {
   animation: body 4s ease-in-out;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 @keyframes body {
@@ -162,6 +164,7 @@ header nav {
   justify-items: center;
   margin-top: 3rem !important;
   padding-top: 20px;
+  z-index: 999999999;
 }
 header nav ul {
   width: 100%;
