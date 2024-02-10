@@ -9,32 +9,63 @@
     />
     <title>YogaPras.</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="container">
       <div class="head container">
-        <h1 class="logo">Yoga<span>Pras.</span></h1>
+        <h1
+          data-aos="flip-down"
+          data-aos-delay="1250"
+          data-aos-duration="500"
+          class="logo"
+        >
+          Yoga<span>Pras.</span>
+        </h1>
         <div class="msg">
-          <ul>
+          <ul data-aos="fade-up" data-aos-delay="900">
             <li>Welcome To<br />my web portfolio</li>
           </ul>
-          <ul>
+          <ul data-aos="fade-up" data-aos-delay="800">
             <li>Thank you<br />for visiting my website</li>
           </ul>
-          <ul>
+          <ul data-aos="fade-up" data-aos-delay="700">
             <li id="tahun">2023</li>
           </ul>
         </div>
-        <a href="#contact" class="btn-group">
-          <button>Contact</button>
-          <button>Me</button>
-        </a>
+        <div class="btn-group">
+          <button
+            onclick="location.href='#contact'"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            Contact
+          </button>
+          <button
+            onclick="location.href='#about'"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            Me
+          </button>
+        </div>
       </div>
       <div class="body container">
-        <h1>What are you looking for?</h1>
-        <p>Fullstack Devloper<span>.</span></p>
-        <p>Click the "Get started" button to scroll down</p>
-        <a href="#welcome" class="btn-group">
+        <h1 data-aos="fade-up" data-aos-delay="1700">
+          What are you looking for?
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="1600">
+          Fullstack Devloper<span>.</span>
+        </p>
+        <p data-aos="fade-up" data-aos-delay="1500">
+          Click the "Get started" button to scroll down
+        </p>
+        <a
+          data-aos="fade-up"
+          data-aos-delay="1450"
+          href="#welcome"
+          class="btn-group"
+        >
           <button>Get started</button>
           <button aria-label="scroll-to-down">
             <svg
@@ -52,7 +83,7 @@
           </button>
         </a>
       </div>
-      <nav id="navigation" class="container">
+      <nav data-aos="fade-up" id="navigation" class="container">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -64,7 +95,7 @@
     </header>
     <main class="container">
       <article id="welcome">
-        <div class="">
+        <div data-aos="fade-right" data-aos-delay="450">
           <h1>THANK YOU FOR VISITING MY <span>WEBSITE</span></h1>
           <p id="tanggal"></p>
         </div>
@@ -107,5 +138,9 @@
     </main>
     <div id="cursor-ring"></div>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
